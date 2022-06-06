@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<script src='script.js'></script>
+<script>
+    const array = new MyArray();
+    array.add('vla1')
+    array.add('vla1', 1)
+    array.add('vla1', 2)
+    console.log(array.memory)
+    console.log(array.length)
+
+  /*  const obj = {0: 'a', 1: 'b', 2: 'd'}
+    const newObj = Object.assign(obj);
+    const index = 1;
+
+    Object.keys(obj).forEach((key, i) => {
+        if (key >= index) {
+            obj[+key + 1] = newObj[key]
+        }
+    })
+    obj[index] = "c"
+    console.log(obj)*/
+</script>
+</body>
+</html>

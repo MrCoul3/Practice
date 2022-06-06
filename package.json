@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "parcel": "^2.6.0"
+  },
+  "scripts": {
+    "build": "parcel build multiChannelArchive/index.html --no-cache --public-url ./",
+    "start": "parcel multiChannelArchive/index.html -p 3000 --no-cache && parcel watch ./*",
+    "server": "node ./server.js"
+  }
+}
