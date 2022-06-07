@@ -1,29 +1,15 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
 <body>
-<script src='script.js'></script>
-<script>
-    const array = new MyArray();
-    array.add('vla1')
-    array.add('vla1', 1)
-    array.add('vla1', 2)
-    console.log(array.memory)
-    console.log(array.length)
-
-  /*  const obj = {0: 'a', 1: 'b', 2: 'd'}
-    const newObj = Object.assign(obj);
-    const index = 1;
-
-    Object.keys(obj).forEach((key, i) => {
-        if (key >= index) {
-            obj[+key + 1] = newObj[key]
-        }
-    })
-    obj[index] = "c"
-    console.log(obj)*/
-</script>
+<div class="wrapper">
+    <span class="left_top" data-tooltip="Взяли текст из data-tooltip">Верхний тултип</span>
+    <span class="left_bottom" data-tooltip="И еще один">Нижний тултип</span>
+</div>
+<script src="tooltip.js"></script>
 </body>
 </html>
