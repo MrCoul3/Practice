@@ -22,7 +22,13 @@ const proxyProps = new Proxy(props, {
         return true;
     },
     get(target, prop) {
-        console.log('Нельзя получить просто так 2');
+        const value = target[prop];
+        return typeof value === "function" ? value.bind(target) : value;
+    },
+    deleteProperty(target, prop) {
+        if (prop.indexOf('_') === 0) {
+            throw new Error('Нет прав')
+        }
         return true;
     }
 });
